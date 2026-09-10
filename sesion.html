@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Iniciar sesión</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <h1>Supervisión</h1>
+
+        <p style="text-align: center; color: #999;">
+            Inicie sesión para continuar
+        </p>
+
+        <label for="correo">
+            Correo electrónico
+        </label>
+
+        <input
+            type="email"
+            id="correo"
+            placeholder="Ingrese su correo"
+        >
+
+        <label for="contrasena">
+            Contraseña
+        </label>
+
+        <input
+            type="password"
+            id="contrasena"
+            placeholder="Ingrese su contraseña"
+        >
+
+        <button onclick="iniciarSesion()">
+            Iniciar sesión
+        </button>
+
+        <p
+            id="mensaje"
+            style="
+                text-align: center;
+                margin-top: 20px;
+                color: #ff6b6b;
+            "
+        ></p>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/supabase.js"></script>
+    <script src="js/login.js"></script>
+
+</body>
+
+</html>
