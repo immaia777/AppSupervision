@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Observaciones</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <h1>Observaciones</h1>
+
+        <div class="datos-supervision">
+
+            <p>
+                <strong>Evaluación finalizada</strong>
+            </p>
+
+            <p>
+                Registre las observaciones correspondientes a la supervisión.
+            </p>
+
+        </div>
+
+        <label for="observaciones">
+            Observaciones
+        </label>
+
+        <textarea
+            id="observaciones"
+            placeholder="Escriba aquí las observaciones..."
+        ></textarea>
+
+        <p id="mensaje" class="mensaje"></p>
+
+        <div class="botones-observaciones">
+
+            <button
+                type="button"
+                onclick="regresar()">
+                Anterior
+            </button>
+
+            <button
+                type="button"
+                onclick="guardarObservaciones()">
+                Finalizar evaluación
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/supabase.js"></script>
+    <script src="js/observaciones.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,385 @@
+/* ========================================
+   ESTILO GENERAL
+======================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: #0d0d0d;
+    color: #f5f5f5;
+}
+
+
+/* ========================================
+   CONTENEDOR PRINCIPAL
+======================================== */
+
+.contenedor {
+    width: 90%;
+    max-width: 700px;
+    margin: 40px auto;
+    background: #171717;
+    padding: 35px;
+    border-radius: 18px;
+    border: 1px solid #2d2d2d;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.5);
+}
+
+
+/* ========================================
+   TITULOS
+======================================== */
+
+h1 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 35px;
+    color: #ffffff;
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    color: #ffffff;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+
+/* ========================================
+   ETIQUETAS
+======================================== */
+
+label {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #d6d6d6;
+}
+
+
+/* ========================================
+   INPUTS Y SELECTS
+======================================== */
+
+select,
+input {
+    width: 100%;
+    padding: 13px;
+    background: #222222;
+    color: #ffffff;
+    border: 1px solid #3a3a3a;
+    border-radius: 9px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.2s;
+}
+
+select:focus,
+input:focus {
+    border-color: #ffffff;
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.08);
+}
+
+input::placeholder {
+    color: #777777;
+}
+
+input[readonly] {
+    color: #bdbdbd;
+    background: #1e1e1e;
+}
+
+
+/* ========================================
+   BOTONES
+======================================== */
+
+button {
+    width: 100%;
+    margin-top: 25px;
+    padding: 14px;
+    border: none;
+    border-radius: 9px;
+    background: #ffffff;
+    color: #111111;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #dcdcdc;
+    transform: translateY(-1px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+
+/* ========================================
+   DATOS DE SUPERVISIÓN
+======================================== */
+
+.datos-supervision {
+    background: #202020;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #303030;
+}
+
+.datos-supervision p {
+    margin: 10px 0;
+    color: #d0d0d0;
+}
+
+.datos-supervision strong {
+    color: #ffffff;
+}
+
+
+/* ========================================
+   LÍNEAS
+======================================== */
+
+hr {
+    border: none;
+    border-top: 1px solid #333333;
+    margin: 30px 0;
+}
+
+
+/* ========================================
+   SUBTOTALES
+======================================== */
+
+.subtotal {
+    margin-top: 20px;
+    padding: 14px;
+    background: #202020;
+    border-left: 3px solid #ffffff;
+    border-radius: 6px;
+    color: #cfcfcf;
+}
+
+.subtotal strong {
+    color: #ffffff;
+}
+
+
+/* ========================================
+   TOTAL GENERAL
+======================================== */
+
+.total-general {
+    text-align: center;
+    font-size: 38px;
+    margin: 25px 0;
+    color: #ffffff;
+}
+
+
+/* ========================================
+   RESULTADO
+======================================== */
+
+#resultado {
+    text-align: center;
+    font-size: 28px;
+    margin-top: 25px;
+    padding: 18px;
+    border-radius: 12px;
+    background: #202020;
+    color: #ffffff;
+    border: 1px solid #383838;
+}
+
+
+/* ========================================
+   HISTORIAL
+======================================== */
+
+.tarjeta-evaluacion {
+    background: #202020;
+    border: 1px solid #333333;
+    border-radius: 13px;
+    padding: 22px;
+    margin-bottom: 20px;
+    transition: 0.2s;
+}
+
+.tarjeta-evaluacion:hover {
+    border-color: #555555;
+    transform: translateY(-2px);
+}
+
+.tarjeta-evaluacion h2 {
+    margin-top: 0;
+    font-size: 21px;
+}
+
+.tarjeta-evaluacion p {
+    margin: 10px 0;
+    color: #cfcfcf;
+}
+
+.tarjeta-evaluacion strong {
+    color: #ffffff;
+}
+
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 600px) {
+
+    .contenedor {
+        width: 94%;
+        padding: 23px;
+        margin: 20px auto;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    h2 {
+        font-size: 21px;
+    }
+
+    .total-general {
+        font-size: 32px;
+    }
+
+}
+/* ========================================
+   FILTROS DEL HISTORIAL
+======================================== */
+
+.filtros {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.filtros input,
+.filtros select {
+    margin: 0;
+}
+.botones-historial {
+    display: flex;
+    gap: 10px;
+}
+
+.botones-historial button {
+    margin-top: 15px;
+}
+
+@media (max-width: 600px) {
+
+    .botones-historial {
+        flex-direction: column;
+    }
+
+}
+/* ========================================
+   INICIO
+======================================== */
+
+.subtitulo {
+    text-align: center;
+    color: #999999;
+    margin-top: -20px;
+    margin-bottom: 35px;
+}
+
+.formulario-supervision {
+    margin-bottom: 30px;
+}
+
+.formulario-supervision button {
+    margin-top: 30px;
+}
+.formulario-supervision {
+    display: none;
+    margin-bottom: 30px;
+}
+/* ========================================
+   EVALUACIÓN
+======================================== */
+
+.criterios {
+    width: 100%;
+}
+
+.criterios label {
+    margin-top: 20px;
+}
+
+.boton-principal {
+    margin-top: 15px;
+    font-size: 17px;
+    padding: 15px;
+}
+/* ========================================
+   OBSERVACIONES
+======================================== */
+
+textarea {
+    width: 100%;
+    min-height: 180px;
+    padding: 15px;
+    background: #222222;
+    color: #ffffff;
+    border: 1px solid #3a3a3a;
+    border-radius: 9px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    resize: vertical;
+    outline: none;
+    transition: 0.2s;
+}
+
+textarea:focus {
+    border-color: #ffffff;
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.08);
+}
+
+textarea::placeholder {
+    color: #777777;
+}
+
+.mensaje {
+    min-height: 22px;
+    margin-top: 15px;
+    text-align: center;
+    color: #cfcfcf;
+}
+
+.botones-observaciones {
+    display: flex;
+    gap: 10px;
+}
+
+.botones-observaciones button {
+    margin-top: 15px;
+}
+
+@media (max-width: 600px) {
+
+    .botones-observaciones {
+        flex-direction: column;
+    }
+
+}

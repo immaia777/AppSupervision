@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Evaluación de Supervisión</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <h1>Evaluación de Supervisión</h1>
+
+
+        <!-- DATOS DE LA SUPERVISIÓN -->
+
+        <div class="datos-supervision">
+
+            <p>
+                <strong>No. de Programa:</strong>
+                <span id="mostrarPrograma"></span>
+            </p>
+
+            <p>
+                <strong>Evento:</strong>
+                <span id="mostrarEvento"></span>
+            </p>
+
+            <p>
+                <strong>Instructor:</strong>
+                <span id="mostrarInstructor"></span>
+            </p>
+
+            <p>
+                <strong>Supervisor:</strong>
+                <span id="mostrarSupervisor"></span>
+            </p>
+
+            <p>
+                <strong>Fecha:</strong>
+                <span id="mostrarFecha"></span>
+            </p>
+
+        </div>
+
+
+        <hr>
+
+
+        <!-- BLOQUE 1 -->
+
+        <h2>PROGRAMACIÓN</h2>
+
+        <div class="criterios">
+
+            <label for="criterio1">
+                1. Presenta portafolio de gestión (10 puntos)
+            </label>
+
+            <select id="criterio1">
+                <option value="">Seleccione una calificación</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+
+
+            <label for="criterio2">
+                2. Formula todos los componentes del PDSA (5 puntos)
+            </label>
+
+            <select id="criterio2">
+                <option value="">Seleccione una calificación</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+
+
+            <label for="criterio3">
+                3. Diseña situaciones de aprendizaje pertinentes (10 puntos)
+            </label>
+
+            <select id="criterio3">
+                <option value="">Seleccione una calificación</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+
+
+            <label for="criterio4">
+                4. Diseña o elige recursos didácticos (5 puntos)
+            </label>
+
+            <select id="criterio4">
+                <option value="">Seleccione una calificación</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+
+
+            <label for="criterio5">
+                5. Considera los criterios de evaluación en el diseño de los instrumentos de evaluación (5 puntos)
+            </label>
+
+            <select id="criterio5">
+                <option value="">Seleccione una calificación</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+
+
+            <label for="criterio6">
+                6. Prepara las condiciones para la sesión formativa (10 puntos)
+            </label>
+
+            <select id="criterio6">
+                <option value="">Seleccione una calificación</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+
+        </div>
+
+        <p class="subtotal">
+            TOTAL PROGRAMACIÓN:
+            <strong>
+                <span id="totalBloque1">0</span> / 45
+            </strong>
+        </p>
+
+
+        <hr>
+
+
+        <!-- BLOQUE 2 -->
+
+        <h2>CONTROL PROCESO FORMATIVO</h2>
+
+        <label for="criterio7">
+            7. Mantiene control de asistencia en orden y al día (5 puntos)
+        </label>
+
+        <select id="criterio7">
+            <option value="">Seleccione una calificación</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+
+
+        <label for="criterio8">
+            8. Presenta control completo de los aspectos teóricos (TI/TG, CDT) (5 puntos)
+        </label>
+
+        <select id="criterio8">
+            <option value="">Seleccione una calificación</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+
+
+        <label for="criterio9">
+            9. Presenta control completo de los aspectos prácticos (AHD, AAT) (5 puntos)
+        </label>
+
+        <select id="criterio9">
+            <option value="">Seleccione una calificación</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+
+
+        <p class="subtotal">
+            TOTAL CONTROL PROCESO FORMATIVO:
+            <strong>
+                <span id="totalBloque2">0</span> / 15
+            </strong>
+        </p>
+
+
+        <hr>
+
+
+        <!-- BLOQUE 3 -->
+
+        <h2>9Ss</h2>
+
+        <label for="criterio10">
+            10. Promueve una cultura de bienestar (9Ss, pausas activas, SSO, protocolos de bioseguridad, entre otros) (10 puntos)
+        </label>
+
+        <select id="criterio10">
+            <option value="">Seleccione una calificación</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+
+
+        <p class="subtotal">
+            TOTAL 9Ss:
+            <strong>
+                <span id="totalBloque3">0</span> / 10
+            </strong>
+        </p>
+
+
+        <hr>
+
+
+        <!-- BLOQUE 4 -->
+
+        <h2>GESTIÓN DEL EVENTO</h2>
+
+        <label for="criterio11">
+            11. Presenta gestión de materiales, manejo de deserciones, informe de fallos en equipos e infraestructura, lineamientos para la administración (5 puntos)
+        </label>
+
+        <select id="criterio11">
+            <option value="">Seleccione una calificación</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+
+
+        <label for="criterio12">
+            12. Evidencia control de entrega de materiales, con los registros firmados por participantes (5 puntos)
+        </label>
+
+        <select id="criterio12">
+            <option value="">Seleccione una calificación</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+
+
+        <label for="criterio13">
+            13. Uso correcto de EPP (Equipo de Protección Personal) (5 puntos)
+        </label>
+
+        <select id="criterio13">
+            <option value="">Seleccione una calificación</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+
+
+        <label for="criterio14">
+            14. Área de trabajo limpia y ordenada (5 puntos)
+        </label>
+
+        <select id="criterio14">
+            <option value="">Seleccione una calificación</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+
+
+        <label for="criterio15">
+            15. Materiales organizados y clasificados (5 puntos)
+        </label>
+
+        <select id="criterio15">
+            <option value="">Seleccione una calificación</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+
+
+        <label for="criterio16">
+            16. Participación activa de los aprendices en el orden y limpieza (5 puntos)
+        </label>
+
+        <select id="criterio16">
+            <option value="">Seleccione una calificación</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+
+
+        <p class="subtotal">
+            TOTAL GESTIÓN DEL EVENTO:
+            <strong>
+                <span id="totalBloque4">0</span> / 30
+            </strong>
+        </p>
+
+
+        <hr>
+
+
+        <!-- TOTAL GENERAL -->
+
+        <h2>Total general</h2>
+
+        <p class="total-general">
+            <strong>
+                <span id="totalGeneral">0</span> / 100
+            </strong>
+        </p>
+
+
+        <button
+            class="boton-principal"
+            onclick="calcularResultado()">
+            Calcular resultado
+        </button>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/supabase.js"></script>
+    <script src="js/evaluacion.js"></script>
+
+</body>
+
+</html>

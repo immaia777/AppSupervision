@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Resultado</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <div class="contenedor">
+        <button onclick="window.location.href='sesion.html'">
+             Volver al inicio
+                </button>
+
+        <h1>Resultado de la Supervisión</h1>
+
+        <p>
+            <strong>No. de Programa:</strong>
+            <span id="mostrarPrograma"></span>
+        </p>
+
+        <p>
+            <strong>Evento:</strong>
+            <span id="mostrarEvento"></span>
+        </p>
+
+        <p>
+            <strong>Instructor:</strong>
+            <span id="mostrarInstructor"></span>
+        </p>
+
+        <p>
+            <strong>Supervisor:</strong>
+            <span id="mostrarSupervisor"></span>
+        </p>
+
+        <p>
+            <strong>Fecha:</strong>
+            <span id="mostrarFecha"></span>
+        </p>
+
+        <hr>
+
+        <h2>Resultados</h2>
+
+        <p>
+            Bloque 1:
+            <strong>
+                <span id="bloque1"></span> / 45
+            </strong>
+        </p>
+
+        <p>
+            Bloque 2:
+            <strong>
+                <span id="bloque2"></span> / 15
+            </strong>
+        </p>
+
+        <p>
+            Bloque 3:
+            <strong>
+                <span id="bloque3"></span> / 10
+            </strong>
+        </p>
+
+        <p>
+            Bloque 4:
+            <strong>
+                <span id="bloque4"></span> / 30
+            </strong>
+        </p>
+
+        <hr>
+
+        <h2>Total</h2>
+
+        <p class="total-general">
+            <strong>
+                <span id="puntaje"></span> / 100
+            </strong>
+        </p>
+
+        <h2 id="resultado"></h2>
+
+        <hr>
+
+        <h2>Observaciones</h2>
+
+        <p id="observaciones"></p>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+            <script src="js/supabase.js"></script>
+            <script src="js/resultado.js"></script>
+
+</body>
+
+</html>

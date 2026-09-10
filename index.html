@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Supervisión</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <h1>Supervisión</h1>
+
+        <p style="text-align: center; color: #999; margin-top: -20px;">
+            Sistema de Supervisión y Evaluación
+        </p>
+
+
+        <!-- NUEVA SUPERVISIÓN -->
+
+        <div class="tarjeta-evaluacion">
+
+            <h2>📝 Nueva supervisión</h2>
+
+            <p>
+                Inicie una nueva evaluación de supervisión.
+            </p>
+
+            <button onclick="mostrarFormulario()">
+                Nueva supervisión
+            </button>
+
+        </div>
+
+
+        <!-- FORMULARIO -->
+
+        <div id="formularioSupervision" style="display: none;">
+
+            <label for="programa">
+                No. de Programa
+            </label>
+
+            <select id="programa">
+                <option value="">Seleccione un programa</option>
+            </select>
+
+
+            <label for="evento">
+                Nombre del evento
+            </label>
+
+            <input
+                type="text"
+                id="evento"
+                readonly
+                placeholder="El evento aparecerá automáticamente"
+            >
+
+
+            <label for="instructor">
+                Instructor
+            </label>
+
+            <input
+                type="text"
+                id="instructor"
+                readonly
+                placeholder="El instructor aparecerá automáticamente"
+            >
+
+
+            <label for="supervisor">
+                Supervisor
+            </label>
+
+            <input
+                type="text"
+                id="supervisor"
+                placeholder="Escriba el nombre del supervisor"
+            >
+
+
+            <label for="fecha">
+                Fecha de supervisión
+            </label>
+
+            <input
+                type="date"
+                id="fecha"
+            >
+
+
+            <button onclick="irAEvaluacion()">
+                Continuar
+            </button>
+
+        </div>
+
+
+        <!-- HISTORIAL -->
+
+        <div class="tarjeta-evaluacion">
+
+            <h2>📋 Historial</h2>
+
+            <p>
+                Consulte las supervisiones realizadas.
+            </p>
+
+            <button onclick="verHistorial()">
+                Ver historial
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/supabase.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>

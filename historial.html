@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Historial de Supervisiones</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <h1>Historial de Supervisiones</h1>
+
+       <div class="filtros">
+
+    <input
+        type="text"
+        id="buscar"
+        placeholder="🔎 Buscar por programa o supervisor"
+    >
+
+    <input
+        type="date"
+        id="filtroFecha"
+    >
+
+    <select id="filtroResultado">
+        <option value="">Todos los resultados</option>
+        <option value="CONFORME">CONFORME</option>
+        <option value="NO CONFORME">NO CONFORME</option>
+    </select>
+
+</div>
+
+<div id="listaEvaluaciones">
+    <p>Cargando evaluaciones...</p>
+</div>
+
+        <button onclick="volverInicio()">
+            Nueva supervisión
+        </button>
+
+    </div>
+
+    <!-- SUPABASE -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/supabase.js"></script>
+
+    <!-- HISTORIAL -->
+    <script src="js/historial.js"></script>
+
+</body>
+
+</html>
+    <script src="js/historial.js"></script>
+
+</body>
+
+</html>
